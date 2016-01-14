@@ -1,4 +1,4 @@
-# An NPM base faye server running within a docker container
+# An NPM based faye server running inside docker.
 
 A Docker container for publish/subscribe messaging. This server can repond to requests from any client implementation from backend server or a CORS support enabled web browser. This best suites development purposes.
 

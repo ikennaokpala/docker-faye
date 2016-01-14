@@ -5,7 +5,13 @@ A Docker container for publish/subscribe messaging. This server can repond to re
 To build this faye server run the following command:
 
 ```bash
-$ docker build --tag=faye ikennaokpala/docker-faye/
+$ docker pull kengimel/faye
+```
+
+From Github
+
+```bash
+$ docker build --tag=faye github.com/kengimel/docker-faye
 ```
 
 This will run on a default port of 9292.
@@ -38,4 +44,27 @@ client.publish('/sample', {
   text: 'Ahoy! There..'
 });
 
+```
+
+#NB:
+
+## Before pushing to docker hub
+
+## Login
+
+```bash
+$ docker login  
+```
+
+## Build
+
+```bash
+$ cd /to/docker/directory/path/
+$ docker build -t <username>/<repo>:latest .
+```
+
+## Push to docker hub
+
+```bash
+$ docker push <username>/<repo>:latest
 ```

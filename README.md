@@ -19,13 +19,13 @@ This will run on a default port of 9292.
 To change the PORT for this run the following command:
 
 ```bash
-$ docker build --build-arg PORT=9292 --tag=faye ikennaokpala/docker-faye/
+$ docker build --build-arg PORT=9292 --tag=faye github.com/kengimel/docker-faye/
 ```
 
 To run the server and expose it on port 9292 of the host machine, run the following command:
 
 ```bash
-$ docker run --name=faye --detach=true --publish=9292:9292 faye
+$ docker run --name=faye --detach=true --publish=9292:9292 kengimel/faye
 ```
 
 Once the script is loaded, clients can then publish or subscribe to any arbitrary channel.

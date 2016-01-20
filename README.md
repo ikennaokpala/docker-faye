@@ -11,7 +11,7 @@ $ docker pull kengimel/faye
 From Github
 
 ```bash
-$ docker build --tag=faye github.com/kengimel/docker-faye
+$ docker build --tag=faye github.com/ikennaokpala/docker-faye
 ```
 
 This will run on a default port of 9292.
@@ -19,7 +19,7 @@ This will run on a default port of 9292.
 To change the PORT for this run the following command:
 
 ```bash
-$ docker build --build-arg PORT=9292 --tag=faye github.com/kengimel/docker-faye/
+$ docker build --build-arg PORT=9292 --tag=faye github.com/ikennaokpala/docker-faye/
 ```
 
 To run the server and expose it on port 9292 of the host machine, run the following command:

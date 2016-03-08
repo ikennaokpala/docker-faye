@@ -24,6 +24,9 @@ $ docker build --build-arg PORT=9292 --tag=faye github.com/ikennaokpala/docker-f
 
 To run the server and expose it on port 9292 of the host machine, run the following command:
 
+
+HOST_IP=`/sbin/ifconfig eth1 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
+
 ```bash
 $ docker run --name=faye --detach=true --publish=9292:9292 kengimel/faye
 ```

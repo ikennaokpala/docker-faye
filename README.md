@@ -7,13 +7,11 @@ To build this faye server run the following command:
 ```bash
 $ docker pull kengimel/faye
 ```
-
 From Github
 
 ```bash
 $ docker build --tag=faye github.com/ikennaokpala/docker-faye
 ```
-
 This will run on a default port of 9292.
 
 To change the PORT for this run the following command:

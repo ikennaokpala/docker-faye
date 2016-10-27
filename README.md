@@ -43,7 +43,6 @@ client.publish('/sample', {
 });
 
 ```
-
 #NB:
 
 ## Before pushing to docker hub
